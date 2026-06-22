@@ -10,8 +10,7 @@ test('Upload a file and verify success message', async ({ page }) => {
   const fileUpload = page.locator('#file-upload')
 
   // Correct path to sample.txt
-  //const filePath = 'C:\\Automation\\PW Learning\\.github\\data\\sample.txt'
-  const filePath = path.resolve('./data/sample.txt')
+  const filePath = 'C:\\Automation\\PW Learning\\.github\\data\\sample.txt'
   // Upload file
   await fileUpload.setInputFiles(filePath)
 
